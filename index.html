@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>2025新年接福游戏</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="app">
+        <!-- 加载页面 -->
+        <div class="loading-screen">
+            <div class="progress-bar">
+                <div class="progress"></div>
+            </div>
+        </div>
+
+        <!-- 欢迎页面 -->
+        <div class="welcome-page">
+            <div class="welcome-content">
+                <button class="start-button">开始接福</button>
+            </div>
+        </div>
+
+        <!-- 游戏页面 -->
+        <div class="game-page">
+            <div class="game-header">
+                <div class="luck-value">福气值: <span id="score">0</span></div>
+                <div class="timer">时间: <span id="time">30</span>s</div>
+            </div>
+            <div class="game-container">
+                <canvas id="gameCanvas"></canvas>
+                <div class="player-container">
+                    <img class="player" src="image/user.png" alt="player">
+                </div>
+            </div>
+        </div>
+
+        <!-- 结算弹窗 -->
+        <div class="result-modal">
+            <div class="modal-content">
+                <h2>游戏结束</h2>
+                <div class="final-score">0</div>
+                <button class="start-button">再来一次</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

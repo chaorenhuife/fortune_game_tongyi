@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>接福袋 - 游戏页</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="game-container">
+        <div class="game-header">
+            <div class="luck-value">福气值: <span id="luck-value">0</span></div>
+            <div class="timer">倒计时: <span id="timer">30</span>秒</div>
+        </div>
+        <canvas id="game-canvas"></canvas>
+        <div class="player-container">
+            <img src="image/user.png" alt="玩家角色" id="player" class="player">
+        </div>
+        <div class="overlay" id="overlay">
+            <div class="popup">
+                <h2>游戏结束</h2>
+                <h3>福气值: <span id="final-score">0</span></h3>
+                <button id="retry-button">再来！</button>
+            </div>
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
